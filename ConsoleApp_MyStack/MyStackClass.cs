@@ -6,45 +6,6 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp_MyStack
 {
-    /*internal class MyStackClass
-    {
-        int arrSize = 0, top;
-        int[] arr=new int[1000];
-
-        public MyStackClass()
-        {
-            top = -1;
-        }
-        public int size { get { return arrSize; } }
-        public int topElement()
-        {
-            if(top == -1)
-                return -1;
-            else { return arr[top]; }
-            //return arr[top];    
-        } 
-        //{ get { return arr[this.top]; } } 
-        public void Push(int x)
-        {
-            //this.arrSize++;
-            arr[++top] = x;
-            //top++;
-            arrSize++;
-            
-        }
-        public void Pop()
-        {
-            arrSize--;
-            top--;
-        }
-        public void display()
-        { 
-            for(int i=top;i>=0;i--)
-            {
-                Console.WriteLine(arr[i]);
-            }
-        }
-    }*/
 
     interface ICloneable
     {
@@ -81,14 +42,6 @@ namespace ConsoleApp_MyStack
             top = -1;
             stack = new int[size];
         }
-        //bool IsEmpty()
-        //{
-        //    return (top < 0);
-        //}
-        //public Stack()
-        //{
-        //    top = -1;
-        //}
         internal void Push(int data)
         {
             if (top >= this.size)
